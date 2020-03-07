@@ -15,7 +15,7 @@ export default class SideBar extends Component {
           {/* Divider */}
           <hr className="sidebar-divider my-0" />
           {/* Nav Item - Dashboard */}
-          <li className="nav-item">
+          <li className="nav-item active">
             <Link className="nav-link" to="/">
               <i className="fas fa-fw fa-tachometer-alt" />
               <span>Dashboard</span></Link>
@@ -63,12 +63,12 @@ export default class SideBar extends Component {
             Addons
           </div>
           {/* Nav Item - Pages Collapse Menu */}
-          <li className="nav-item active">
+          <li className="nav-item">
             <Link className="nav-link" to="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
               <i className="fas fa-fw fa-folder" />
               <span>Pages</span>
             </Link>
-            <div id="collapsePages" className="collapse show" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+            <div id="collapsePages" className="collapse hide" aria-labelledby="headingPages" data-parent="#accordionSidebar">
               <div className="bg-white py-2 collapse-inner rounded">
                 <h6 className="collapse-header">Login Screens:</h6>
                 <Link className="collapse-item" to="login">Login</Link>
@@ -77,7 +77,7 @@ export default class SideBar extends Component {
                 <div className="collapse-divider" />
                 <h6 className="collapse-header">Other Pages:</h6>
                 <Link className="collapse-item" to="unknown">404 Page</Link>
-                <Link className="collapse-item active" to="blank">Blank Page</Link>
+                <Link className="collapse-item" to="blank">Blank Page</Link>
               </div>
             </div>
           </li>
