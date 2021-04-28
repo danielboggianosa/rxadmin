@@ -59,9 +59,13 @@ export default class Layout extends Component {
                                 <Route path="/unknown">
                                     <Unknown />
                                 </Route>
-                                <Route path="/">
+                                <Route exact path="/">
                                     <Dashboard/>
                                 </Route>
+                                <Route path="/**">
+                                    <Unknown/>
+                                </Route>
+
                             </Switch>
                         </div>
                     </div>
